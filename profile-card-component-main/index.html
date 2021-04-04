@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+body {
+          min-width: 290px;
+          background-color: #ffffff;  
+          font-family: 'Open Sans', Arial, sans-serif;
+          line-height: 1.5;
+          margin:0;
+          padding:0;
+          box-sizing: border-box;
+}
+
+#container{
+background-image: url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);  
+background-repeat: no-repeat, no-repeat ;
+background-position-x: 50vw, -15vw ;
+background-position-y: 45vh, -65vh ;
+background-color: rgb(13, 177, 199);
+width:100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#card{
+background-color: white; 
+margin: 0;
+padding:0;
+display:flex;
+flex-direction: column;
+box-sizing: border-box;
+align-items: center;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#top-section{
+width:100%;
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+
+#mid-section{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding:0;
+width:100%;
+border-bottom: solid 0.5px lightgray;
+}
+
+#photo{
+  width:100px;
+  height:100px;
+  position:relative;
+  top:-55px;
+  border-radius: 50%;
+  border: solid 5px white;
+}
+
+#name{
+margin:0;
+padding:0;
+position:relative;
+margin-top: -40px;
+}
+
+
+#age{
+margin:0;
+padding:0;
+color:gray;
+}
+
+
+
+#city{
+margin:0;
+padding:0;
+position:relative;
+margin-bottom: 20px;
+color:gray;
+}
+
+
+
+#low-section{
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+margin: 0;
+padding:0;
+width:100%;
+}
+
+#stats{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 20px;
+padding:0;
+min-width:30%;
+}
+
+#stats h4{
+margin: 0;
+padding:0;
+}
+
+#stats h6{
+margin: 0;
+padding:0;
+color:gray;
+}
+
+
+</style>
+
+</head>
+<body>
+  <div id="container">
+    <div id="card">
+      <div id="top-section">
+        <img id="top-photo" src="./images/bg-pattern-card.svg">
+      </div>
+      <div id="mid-section">
+            <img id="photo" src="./images/image-victor.jpg">
+            <h4 id="name">Victor Crest <span id="age">26<span></h4>
+            <h5 id="city">London</h5>    
+      </div>
+      <div id="low-section">
+        <div id="stats">
+          <h4>80K</h4>
+          <h6>Followers</h6>
+          <h6>Followers</h6>
+        </div>
+       <div id="stats">
+          <h4>803K</h4>
+          <h6>Likes</h6>
+        </div>
+        <div id="stats">
+          <h4>1.4K</h4>
+          <h6>Photos</h6>
+        </div>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
